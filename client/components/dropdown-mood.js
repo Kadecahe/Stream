@@ -32,13 +32,13 @@ class DropdownMood extends React.Component {
 
   render() {
     return (
-      <div className="flex-row justify-content-center">
-        <Card>
+      <div className="flex-row justify-content-center mt-3 mb-3">
+        <Card bg="info">
           <Card.Body>
             <form className="" onSubmit={this.handleSubmit}>
               <label
                 htmlFor="mood"
-                className="align-self-center m-1 form-control"
+                className="align-self-center m-1 mb-1 form-control"
                 style={{fontWeight: 'bold'}}
               >
                 How do you want to feel?
@@ -56,9 +56,11 @@ class DropdownMood extends React.Component {
                   <option key={mood.id}>{mood.name}</option>
                 ))}
               </select>
-              <Button type="submit" variant="success">
-                Find me a Meditation!
-              </Button>
+              <div className="flex justify-content-center">
+                <Button type="submit" variant="success">
+                  Find me a Meditation!
+                </Button>
+              </div>
             </form>
             {/* <iframe
         src="https://open.spotify.com/embed/playlist/0eAa4FyRTpxpkKsq6GynFG"

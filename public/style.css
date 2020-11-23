@@ -6,6 +6,9 @@ body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 @keyframes gradient {
@@ -68,4 +71,39 @@ form div {
 .cover .btn-lg {
   padding: 0.75rem 1.25rem;
   font-weight: 700;
+}
+
+#center {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* footer  */
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.logo-2 {
+  max-width: 678px;
+  max-height: 70px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #6c757d;
+  background-color: #1db954;
 }

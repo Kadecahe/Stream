@@ -9,13 +9,8 @@ export default function Welcome() {
         meditation, and will return a playlist to play on your spotify device.
         To start, log in with Spotify on our navigation bar and make sure to
         have spotify open in your backgorund first! The application was built to
-        test Spotify's Web API. In it's next stage, the application will work
+        test Spotify's Web API. In its next stage, the application will work
         with iphone devices.
-      </p>
-      <p className="lead">
-        <a href="#" className="btn btn-lg btn-secondary">
-          Learn more
-        </a>
       </p>
     </main>
   )

@@ -32,38 +32,40 @@ const MeditationPlaylist = ({currentPlaylist, playlists}) => {
 
   return (
     <ErrorBoundary>
-      <Card className="ml-3">
-        <Card.Body>
-          <Image
-            src={currentPlaylist.images[0].url}
-            className="ml-3"
-            style={{flexShrink: '3'}}
-            rounded
-          />
-          <div className="flex-row justify-content-start">
-            <div>
-              <Card.Title>{currentPlaylist.name} </Card.Title>
-              <Card.Text>by {currentPlaylist.owner.id}</Card.Text>
-              {currentPlaylist.description ? (
-                <p>{currentPlaylist.description}</p>
-              ) : (
-                ''
-              )}
+      <div id="center">
+        <Card className="ml-3 mb-3" style={{width: '50%'}} bg="info">
+          <Card.Body>
+            <Image
+              src={currentPlaylist.images[0].url}
+              className="ml-3"
+              style={{flexShrink: '3'}}
+              rounded
+            />
+            <div className="flex-row justify-content-start">
+              <div>
+                <Card.Title>{currentPlaylist.name} </Card.Title>
+                <Card.Text>by {currentPlaylist.owner.id}</Card.Text>
+                {currentPlaylist.description ? (
+                  <p>{currentPlaylist.description}</p>
+                ) : (
+                  ''
+                )}
+              </div>
             </div>
-          </div>
-          <div>
-            <Button
-              type="button"
-              variant="success"
-              className="m-1"
-              onClick={() => handleClick()}
-            >
-              Play
-            </Button>
-            {playlists}
-          </div>
-        </Card.Body>
-      </Card>
+            <div>
+              <Button
+                type="button"
+                variant="success"
+                className="m-1"
+                onClick={() => handleClick()}
+              >
+                Play
+              </Button>
+              {playlists}
+            </div>
+          </Card.Body>
+        </Card>
+      </div>
     </ErrorBoundary>
   )
 }

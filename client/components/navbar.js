@@ -49,6 +49,11 @@ const Navbar = ({handleClick, isLoggedIn, user}) => (
             </a>
           </div>
         )}
+        <Nav.Item>
+          <Link to="/" className="nav-name">
+            About
+          </Link>
+        </Nav.Item>
       </Nav>
     </BootstrapNavbar>
   </div>
