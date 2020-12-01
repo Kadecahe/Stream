@@ -3,7 +3,7 @@ import React from 'react'
 export default function Welcome() {
   return (
     <main role="main" className="inner cover">
-      <h1 Name="cover-heading">Welcome to Stream.</h1>
+      <h1 name="cover-heading">Welcome to Stream.</h1>
       <p className="lead">
         Stream is an application that allows you to choose a mood for
         meditation, and will return a playlist to play on your Spotify device.

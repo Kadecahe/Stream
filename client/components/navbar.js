@@ -12,7 +12,7 @@ const Navbar = ({handleClick, isLoggedIn, user}) => (
         <Link to="/home">
           <img
             style={{width: '3rem', height: '3rem'}}
-            src="Stream-Logo.png"
+            src="favicon.ico"
             alt="Steam"
           />
         </Link>
