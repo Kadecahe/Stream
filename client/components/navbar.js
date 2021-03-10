@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {logout} from '../store'
 import {Nav, Navbar as BootstrapNavbar} from 'react-bootstrap'
+// import '../../public/favicon.io'
 
 const Navbar = ({handleClick, isLoggedIn, user}) => (
   <div>
@@ -12,7 +13,7 @@ const Navbar = ({handleClick, isLoggedIn, user}) => (
         <Link to="/home">
           <img
             style={{width: '3rem', height: '3rem'}}
-            src="favicon.ico"
+            src="/favicon.ico"
             alt="Steam"
           />
         </Link>

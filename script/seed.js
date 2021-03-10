@@ -44,7 +44,9 @@ async function seed() {
 async function runSeed() {
   console.log('seeding...')
   try {
+    console.log('before')
     await seed()
+    console.log('after')
   } catch (err) {
     console.error(err)
     process.exitCode = 1
